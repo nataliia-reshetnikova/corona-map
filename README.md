@@ -17,8 +17,8 @@ Jumpstart your next Gatsby mapping project with Leaflet!
 * [Yarn](https://yarnpkg.com/en/)
 
 ### Quick Start
+/Check to run next commands from project folder/
 After cloning the project into your directory, run the following in your terminal:
-*check to run next commands from project folder*
 ```
 yarn install
 ```
