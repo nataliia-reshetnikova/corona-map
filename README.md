@@ -1,5 +1,5 @@
 # 🔆✈️Coronavirus Statistics and Travel Advice Map Project
-Jumpstart your next Gatsby mapping project with Leaflet!
+---description---
 
 ## 🧰 What's inside
 * [Yarn](https://yarnpkg.com/en/)
