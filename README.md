@@ -1,4 +1,4 @@
-# 🍃 Gatsby Leaflet Project
+# 🔆✈️Coronavirus Statistics and Travel Advice Map Project
 Jumpstart your next Gatsby mapping project with Leaflet!
 
 ## 🧰 What's inside
