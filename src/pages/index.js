@@ -8,11 +8,11 @@ import Map from 'components/Map';
 
 
 const LOCATION = {
-  lat: 0,
-  lng: 0
+  lat: 20,
+  lng: 30
 };
 const CENTER = [LOCATION.lat, LOCATION.lng];
-const DEFAULT_ZOOM = 2;
+const DEFAULT_ZOOM = 3;
 
 const IndexPage = () => {
 
@@ -70,21 +70,26 @@ const IndexPage = () => {
       if(cases>1000){
         casesString = `${casesString.slice(0,-3)}k+`
       }
-      if(cases<1000) additionalClass="good";
-      if(cases>1000&&cases<10000) additionalClass="moderate";
-      if(cases>10000) additionalClass="critical";
+      if(cases<=1000) additionalClass="good";
+      if(cases>1000&&cases<=10000) additionalClass="moderate";
+      if(cases>10000&&cases<=100000) additionalClass="high";
+      if(cases>100000) additionalClass="critical";
       if(updated){
-        updatedFromatted=new Date(updated).toLocaleString();
+        updatedFromatted=new Date(updated).toDateString();
       }
+      let deathRate = (deaths/cases)*100;
+      let recoveryRate = (recovered/cases)*100;
       const html = `
       <span class="${additionalClass} icon-marker ">
         <span class="icon-marker-tooltip">
           <h2>${country}</h2>
           <ul>
-            <li>Confirmed:  ${cases}</li>
-            <li>Updated:  ${updatedFromatted}</li>
-            <li>Deaths: ${deaths}</li>
-            <li>Recovered:  ${recovered}</li>
+            <li><span>Confirmed:</span>  <span>${cases}</span></li>
+            <li><span>Updated:</span>  <span>${updatedFromatted}</span></li>
+            <li><span>Deaths:</span> <span>${deaths}</span></li>
+            <li><span>Recovered:</span>  <span>${recovered}</span></li>
+            <li><span>Death rate:</span>  <span>${deathRate.toFixed(2)}%</span></li>
+            <li><span>Recovery rate:</span>  <span>${recoveryRate.toFixed(2)}%</span></li>
           </ul>
         </span>
         ${casesString}

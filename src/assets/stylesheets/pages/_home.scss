@@ -2,7 +2,7 @@
 
   .map,
   .map-base {
-    height: 100vh;
+    height: 90vh;
   }
 
   main {
@@ -37,23 +37,6 @@
     }
     p {
       margin: 0 0 .5em;
-    }
-
-  }
-
-  .gatsby-astronaut {
-
-    overflow: hidden;
-    width: 10em;
-    height: 10em;
-    background-color: $gatsby-purple;
-    border-radius: 100%;
-    border: solid 6px $gatsby-purple;
-    margin: 0;
-
-    img {
-      width: 100%;
-      height: auto;
     }
 
   }

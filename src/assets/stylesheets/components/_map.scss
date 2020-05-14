@@ -1,13 +1,13 @@
 .map {
   width:100vw;
-  height: 100vh;
+  height: 90vh;
   position: relative;
 
   &,
   .map-base {
     width: 100%;
     height: 100%;
-    background: $blue-grey-50;
+    background: rgba(43, 255, 0, 0.096);
   }
 
 }
@@ -18,7 +18,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  color: $blue-grey-200;
+  color: rgba(43, 255, 0, 0.096);
   font-family: $font-default;
   width: 100%;
   height: 4em;
@@ -41,13 +41,11 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  color: white;
-  width: 3.6em;
-  height: 3.6em;
-  font-size: .7em;
-  font-weight: bold;
+  background-color: rgba(43, 255, 0, 0.096);
+  color:white;
+  font-size: 1em;
   border-radius: 100%;
-  box-shadow: 0 2px 5px rgba(black, .9);
+  box-shadow: 0 1px 2px rgba(rgba(0, 0, 0, 0.034), .2);
 
   &:hover {
 
@@ -59,17 +57,20 @@
 }
 
 .good{
-  background-color: $green-800;
+  width: 2em;
+  height: 2em;
 }
 .moderate{
-  background-color: $yellow-800;
-  width: 4em;
-  height: 4em;
-}
-.critical{
-  background-color: $red-800;
   width: 5em;
   height: 5em;
+}
+.high{
+  width: 7em;
+  height: 7em;
+}
+.critical{
+  width: 8em;
+  height: 8em;
 }
 .icon-marker-tooltip {
 
@@ -79,7 +80,7 @@
   width: 16em;
   font-size: 1.4em;
   padding: 1em;
-  background-color: $blue-grey-900;
+  background-color: rgba(43, 41, 41, 0.959);
   border-radius: .4em;
   margin-bottom: 1em;
   box-shadow: 0 3px 5px rgba(black, .9);
@@ -87,12 +88,12 @@
   &:before {
     display: block;
     position: absolute;
-    bottom: -.6em;
+    bottom: -.5em;
     left: 50%;
     content: '';
     width: 1.4em;
     height: 1.4em;
-    background-color: $blue-grey-900;
+    background-color: rgba(43, 41, 41, 0.959);
     transform: rotate(45deg);
     margin-left: -.7em;
   }
@@ -121,5 +122,10 @@
     padding: 0;
     margin: .6em 0 0;
   }
+  li{
+    display: flex;
+    justify-content: space-between;
+  }
+
 
 }
