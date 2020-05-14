@@ -79,6 +79,7 @@ const IndexPage = () => {
       }
       let deathRate = (deaths/cases)*100;
       let recoveryRate = (recovered/cases)*100;
+      let resolved = ((deaths+recovered)/cases)*100;
       const html = `
       <span class="${additionalClass} icon-marker ">
         <span class="icon-marker-tooltip">
@@ -88,8 +89,10 @@ const IndexPage = () => {
             <li><span>Updated:</span>  <span>${updatedFromatted}</span></li>
             <li><span>Deaths:</span> <span>${deaths}</span></li>
             <li><span>Recovered:</span>  <span>${recovered}</span></li>
+            <hr/>
             <li><span>Death rate:</span>  <span>${deathRate.toFixed(2)}%</span></li>
             <li><span>Recovery rate:</span>  <span>${recoveryRate.toFixed(2)}%</span></li>
+            <li><span>Resolved rate:</span>  <span>${resolved.toFixed(2)}%</span></li>
           </ul>
         </span>
         ${casesString}
