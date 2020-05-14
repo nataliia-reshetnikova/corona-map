@@ -107,7 +107,7 @@ const IndexPage = () => {
 
   const mapSettings = {
     center: CENTER,
-    defaultBaseMap: 'OpenStreetMap',
+    defaultBaseMap: 'Mapbox',
     zoom: DEFAULT_ZOOM,
     mapEffect
   };
