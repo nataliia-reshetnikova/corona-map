@@ -47,11 +47,18 @@ const SecondPage = () => {
       return;
     }
     const {data} = responseGeo;
-    const {travelData} = responseTravel;
+    const travelData = responseTravel.data.data;
     const hasData = Array.isArray(data)&&data.length>0;
-    const hasTravelData = Array.isArray(travelData)&&travelData.length>0;
-    if(!hasData) return;
-
+    const hasTravelData = Object.keys(travelData).length>0;
+    if(!hasData||!hasTravelData) return;
+    data.map((country={})=>{
+      let iso2 = country.countryInfo.iso2;
+      if(travelData.hasOwnProperty(iso2)){
+        let score = travelData[iso2].advisory.score;
+        country["score"] = score;
+      }
+    });
+    console.log(data);
     const geoJson={
       type:'FeatureCollection',
       features:data.map((country={})=>{
@@ -73,40 +80,35 @@ const SecondPage = () => {
     function countryPoint(feature={}, latlng){
       const {properties={}} = feature;
       let updatedFromatted;
-      let casesString;
+      let scoreString;
       let additionalClass="none";
       const{
         country,
         updated,
         cases,
-        deaths,
-        recovered
+        score
       } = properties
-      casesString=`${cases}`;
-      if(cases>1000){
-        casesString = `${casesString.slice(0,-3)}k+`
-      }
-      if(cases<=1000) additionalClass="good";
-      if(cases>1000&&cases<=10000) additionalClass="moderate";
-      if(cases>10000&&cases<=100000) additionalClass="high";
-      if(cases>100000) additionalClass="critical";
+      scoreString=`${score}`;
+      if(score<2)additionalClass="safe";
+      if(score>=2&&score<3)additionalClass = "medium";
+      if(score>=3)additionalClass="unsafe";
+      if(scoreString=="undefined")scoreString="?";
       if(updated){
         updatedFromatted=new Date(updated).toDateString();
       }
-      let resolved = ((deaths+recovered)/cases)*100;
       const html = `
       <span class="${additionalClass} icon-marker ">
         <span class="icon-marker-tooltip">
           <h2>${country}</h2>
           <ul>
-            <li><span>Travel score:</span>  <span>Travel Score</span></li>
+            <li><span>Travel score:</span>  <span>${score}</span></li>
             <hr/>
             <li><span>Confirmed:</span>  <span>${cases}</span></li>
             <li><span>Updated:</span>  <span>${updatedFromatted}</span></li>
-            <li><span>Resolved rate:</span>  <span>${resolved.toFixed(2)}%</span></li>
+
           </ul>
         </span>
-        ${casesString}
+        ${scoreString}
         </span>
       `;
       return Leaflet.marker(latlng,{
