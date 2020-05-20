@@ -18,7 +18,7 @@
 
 ### Quick Start
 /Check to run next commands from project folder/
-After cloning the project into your directory, run the following in your terminal:
+After cloning the project into your directory, run the following in your terminal:terminal
 ```
 yarn install
 ```
