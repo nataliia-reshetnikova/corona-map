@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-leaflet",
-  "description": "A Gatsby starter with Leafet!",
-  "version": "0.2.4",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "name": "covid19-travelscore-map",
+  "description": "",
+  "version": "0.0.1",
+  "author": "Natalie & Hamidreza",
   "dependencies": {
     "axios": "^0.19.2",
     "gatsby": "^2.20.12",
@@ -68,7 +68,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/gatsby-starter-leaflet"
+    "url": "https://github.com/nataliereshetnikova/corona-map"
   },
   "bugs": {
     "url": "https://github.com/colbyfayock/gatsby-starter-leaflet/issues"
