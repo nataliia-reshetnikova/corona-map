@@ -25,7 +25,7 @@ const LOCATION = {
   lng: 30
 };
 const CENTER = [LOCATION.lat, LOCATION.lng];
-const DEFAULT_ZOOM = 3;
+const DEFAULT_ZOOM = 2.5;
 
 const SecondPage = () => {
 
@@ -105,7 +105,7 @@ const SecondPage = () => {
             <hr/>
             <li><span>Confirmed:</span>  <span>${cases}</span></li>
             <li><span>Updated:</span>  <span>${updatedFromatted}</span></li>
-
+            <li>im here</li>
           </ul>
         </span>
         ${scoreString}
@@ -128,7 +128,7 @@ const SecondPage = () => {
 
   const mapSettings = {
     center: CENTER,
-    defaultBaseMap: 'OpenStreetMap',
+    defaultBaseMap: 'Mapbox2',
     zoom: DEFAULT_ZOOM,
     mapEffect
   };
@@ -136,7 +136,7 @@ const SecondPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>Covid19 Stat Map</title>
+        <title>Travel score</title>
       </Helmet>
       <Map {...mapSettings}/>
     </Layout>
