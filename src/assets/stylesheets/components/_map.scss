@@ -59,28 +59,42 @@
 .good{
   width: 2em;
   height: 2em;
+ 
 }
 .moderate{
   width: 5em;
   height: 5em;
+
 }
 .high{
   width: 7em;
   height: 7em;
+ 
 }
 .critical{
   width: 8em;
   height: 8em;
+
 }
 //classes of travel score
 .safe{
-  
+  width: 1em;
+  height: 1em;
+  background-color:green;
+  opacity: 0.5;
 }
 .medium{
-
+  width: 2em;
+  height: 2em;
+  background-color:orange;
+  opacity: 0.5;
 }
 .unsafe{
-
+  width: 3em;
+  height: 3em;
+  background-color:red;
+  opacity: 0.5;
+  
 }
 .icon-marker-tooltip {
 
@@ -90,7 +104,7 @@
   width: 16em;
   font-size: 1.4em;
   padding: 1em;
-  background-color: rgba(43, 41, 41, 0.959);
+  background-color: rgba(14, 13, 13, 0.959);
   border-radius: .4em;
   margin-bottom: 1em;
   box-shadow: 0 3px 5px rgba(black, .9);
@@ -103,7 +117,7 @@
     content: '';
     width: 1.4em;
     height: 1.4em;
-    background-color: rgba(43, 41, 41, 0.959);
+    background-color: rgba(0, 0, 0, 0.959);
     transform: rotate(45deg);
     margin-left: -.7em;
   }
@@ -139,3 +153,4 @@
 
 
 }
+
