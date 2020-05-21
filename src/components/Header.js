@@ -7,6 +7,7 @@ const Header = () => {
   return (
     <header>
       <Container type="content">
+      <img src="../src/assets/images/icons-virus.png"></img>
         <p>COVID 19 STAT</p>
         <ul>
           <li>
