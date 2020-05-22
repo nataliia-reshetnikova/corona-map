@@ -1,5 +1,10 @@
 # 🔆✈️Coronavirus Statistics and Travel Advice Map Project
 ---description---
+Due the COVID-19 virus situation, Many countries issue travel advisories about other countries. Tailored to the citizens of the issueing country, they may be a little biased at times.
+To provide a consolidated and more neutral view, CORONA Map Application, using https://travel-advisory.info and https://corona.lmao.ninja/ resources aggregate the travel advisories from many authorities, normalize them and create a comparable scoring.
+This and the sources help you, to get a more comprehensive impression for better trip planning.
+
+This application, is a map-based application has tow pages, first page(Cases), using  external webservice (travel-advisory) to show updated confirmed COVID-19 cases aslo deaths and recovered cases for each country, the second page(Travel Score) , shows  the Global Travel Risk Map , using external web servises to indicate the risk of travele to the disired country.
 
 ## 🧰 What's inside
 * [Yarn](https://yarnpkg.com/en/)
