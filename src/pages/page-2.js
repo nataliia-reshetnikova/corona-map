@@ -89,9 +89,9 @@ const SecondPage = () => {
         score
       } = properties
       scoreString=`${score}`;
-      if(score<2)additionalClass="safe";
-      if(score>=2&&score<3)additionalClass = "medium";
-      if(score>=3)additionalClass="unsafe";
+      if(score<3.5)additionalClass="safe";
+      if(score>=3.5&&score<=4.5)additionalClass = "medium";
+      if(score>4.5)additionalClass="unsafe";
       if(scoreString=="undefined")scoreString="?";
       if(updated){
         updatedFromatted=new Date(updated).toDateString();
@@ -136,7 +136,7 @@ const SecondPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>Travel score</title>
+        <title>Travel advisory</title>
       </Helmet>
       <Map {...mapSettings}/>
     </Layout>

@@ -78,22 +78,22 @@
 }
 //classes of travel score
 .safe{
-  width: 1em;
-  height: 1em;
-  background-color:green;
-  opacity: 0.5;
+  width: 2.5em;
+  height:2.5em;
+  background-color:rgba(0, 128, 0, 0.336);
+
 }
 .medium{
-  width: 2em;
-  height: 2em;
-  background-color:orange;
-  opacity: 0.5;
-}
-.unsafe{
   width: 3em;
   height: 3em;
-  background-color:red;
-  opacity: 0.5;
+  background-color:rgba(255, 166, 0, 0.301);
+
+}
+.unsafe{
+  width: 4em;
+  height: 4em;
+  background-color:rgba(255, 0, 0, 0.295);
+
   
 }
 .icon-marker-tooltip {
@@ -117,7 +117,7 @@
     content: '';
     width: 1.4em;
     height: 1.4em;
-    background-color: rgba(0, 0, 0, 0.959);
+    background-color: rgba(14, 13, 13, 0.959);
     transform: rotate(45deg);
     margin-left: -.7em;
   }
@@ -153,4 +153,6 @@
 
 
 }
+
+
 
