@@ -6,6 +6,8 @@ This and the sources help you, to get a more comprehensive impression for better
 
 This application, is a map-based application which has two pages, first page(Cases), using  external webservice (travel-advisory) to show updated confirmed COVID-19 cases aslo deaths and recovered cases for each country, the second page(Travel Score) , shows  the Global Travel Risk Map , using external web servises to indicate the risk of travele to the disired country.
 
+You can visit and take a close look to the app at: https://nataliereshetnikova.github.io/corona-map/
+
 ## 🧰 What's inside
 * [Yarn](https://yarnpkg.com/en/)
 * [Gatsby](https://www.gatsbyjs.org/)
