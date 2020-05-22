@@ -1,5 +1,5 @@
 # 🔆✈️Coronavirus Statistics and Travel Advice Map Project
----description---
+
 Due the COVID-19 virus situation, Many countries issue travel advisories about other countries. Tailored to the citizens of the issueing country, they may be a little biased at times.
 To provide a consolidated and more neutral view, CORONA Map Application, using https://travel-advisory.info and https://corona.lmao.ninja/ resources aggregate the travel advisories from many authorities, normalize them and create a comparable scoring.
 This and the sources help you, to get a more comprehensive impression for better trip planning.
@@ -23,7 +23,7 @@ This application, is a map-based application which has two pages, first page(Cas
 
 ### Quick Start
 /Check to run next commands from project folder/
-After cloning the project into your directory, run the following in your terminal:terminal????
+After cloning the project into your directory, run the following in your terminal
 ```
 yarn install
 ```
