@@ -91,7 +91,6 @@ const SecondPage = () => {
             <hr/>
             <li><span>Confirmed:</span>  <span>${cases}</span></li>
             <li><span>Updated:</span>  <span>${updatedFromatted}</span></li>
-            <li>im here</li>
           </ul>
         </span>
         ${scoreString}

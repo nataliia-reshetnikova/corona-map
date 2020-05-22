@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/corona-map",
   plugins: [
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-sass',
