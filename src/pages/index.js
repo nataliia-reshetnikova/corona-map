@@ -1,9 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Helmet from 'react-helmet';
 import Leaflet from 'leaflet';
 import axios from 'axios';
 import Layout from 'components/Layout';
-// import Container from 'components/Container';
 import Map from 'components/Map';
 
 

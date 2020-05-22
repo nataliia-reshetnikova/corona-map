@@ -3,22 +3,7 @@ import Helmet from 'react-helmet';
 import Leaflet from 'leaflet';
 import axios from 'axios';
 import Layout from 'components/Layout';
-import Container from 'components/Container';
 import Map from 'components/Map';
-
-// const SecondPage = () => {
-//   return (
-//     <Layout pageName="two">
-//       <Helmet>
-//         <title>Page Two</title>
-//       </Helmet>
-//       <Container type="content" className="text-center">
-//         <h1>Page Two</h1>
-//         <p>Welcome to page 2</p>
-//       </Container>
-//     </Layout>
-//   );
-// };
 
 const LOCATION = {
   lat: 20,
@@ -57,6 +42,7 @@ const SecondPage = () => {
         let score = travelData[iso2].advisory.score;
         country["score"] = score;
       }
+      return country;
     });
     console.log(data);
     const geoJson={
@@ -92,7 +78,7 @@ const SecondPage = () => {
       if(score<3.5)additionalClass="safe";
       if(score>=3.5&&score<=4.5)additionalClass = "medium";
       if(score>4.5)additionalClass="unsafe";
-      if(scoreString=="undefined")scoreString="?";
+      if(scoreString==="undefined")scoreString="?";
       if(updated){
         updatedFromatted=new Date(updated).toDateString();
       }

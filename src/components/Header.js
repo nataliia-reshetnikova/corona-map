@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header>
       <Container type="content">
-        <img class="virusIcon" src= {virusIcon}/>
+        <img alt="COVID-19 LOGO" className="virusIcon" src= {virusIcon}/>
         <ul>
           <li>
             <Link to="/">Cases</Link>
