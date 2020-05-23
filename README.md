@@ -4,7 +4,7 @@ Due the COVID-19 virus situation, Many countries issue travel advisories about o
 To provide a consolidated and more neutral view, CORONA Map Application, using https://travel-advisory.info and https://corona.lmao.ninja/ resources aggregate the travel advisories from many authorities, normalize them and create a comparable scoring.
 This and the sources help you, to get a more comprehensive impression for better trip planning.
 
-This application, is a map-based application which has two pages, first page(Cases), using  external webservice (travel-advisory) to show updated confirmed COVID-19 cases aslo deaths and recovered cases for each country, the second page(Travel Score) , shows  the Global Travel Risk Map , using external web servises to indicate the risk of travele to the disired country.
+This application, is a map-based application which has two pages, first page(Cases), using  external webservice (Coronavirus statistics)  shows updated confirmed COVID-19 cases and also deaths and recovered cases for each country, the second page (Travel Score), using external web servises(travel advisory API) shows  the Global Travel Risk Map , indicate the risk of travel to the disired country.
 
 You can visit and take a close look to the app at: https://nataliereshetnikova.github.io/corona-map/
 
