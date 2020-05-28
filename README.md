@@ -17,7 +17,7 @@ You can visit and take a close look to the app at: https://nataliereshetnikova.g
 * [Leaflet](https://leafletjs.com/)
 * [React Leaflet](https://react-leaflet.js.org)
 
-## 🚀 Getting Started
+## 🚀🚀Getting Started
 
 ### Requirements
 * [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli)
